@@ -63,3 +63,7 @@ Nombre: Monitor, Precio: $200.0, Stock: 3
 - `main.py`: Script principal de demostración.
 - `README.md`: Este archivo.
 
+
+## ejecucion
+![alt text]({B3211560-ECD2-49E0-A86C-5F8197419FFB}.png)
+
