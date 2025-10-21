@@ -1,0 +1,20 @@
+[
+    {
+        "clase": "TareaUrgente",
+        "titulo": "la tarea de inglich",
+        "descripcion": "hazla",
+        "prioridad": "ALTA",
+        "completada": false,
+        "fecha_creacion": "2025-10-20 19:27:40",
+        "fecha_limite": "2099-11-30"
+    },
+    {
+        "clase": "TareaRecurrente",
+        "titulo": "ba;arme",
+        "descripcion": "ba;arme jeje",
+        "prioridad": "Media",
+        "completada": false,
+        "fecha_creacion": "2025-10-20 19:28:06",
+        "recurrencia": "todos los dias"
+    }
+]
