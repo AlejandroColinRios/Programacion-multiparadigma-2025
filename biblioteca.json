@@ -1,0 +1,17 @@
+{
+    "libros": [
+        {
+            "titulo": "cien años de soledad",
+            "autor": "garcia marquez",
+            "anio": 1999,
+            "estado": "disponible"
+        },
+        {
+            "titulo": "el color que cayo del cielo",
+            "autor": "HP. Lovecraft",
+            "anio": 1999,
+            "estado": "disponible"
+        }
+    ],
+    "usuarios": []
+}
