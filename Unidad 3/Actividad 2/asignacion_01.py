@@ -46,3 +46,33 @@ def componer(*funciones):
         return resultado
     return pipeline
 
+
+    # Datos de prueba
+    numeros = [1, -2, 3, -4, 5, -6, 7, 8, -9, 10]
+
+    print("--- Ejecucion del Pipeline Configurable ---")
+    print(f"Datos de entrada: {numeros}")
+
+    # Pipeline: filtrar positivos -> elevar al cuadrado -> sumar todo
+    pipeline = componer( 
+        # 1. FILTRAR: Solo positivos
+        crear_filtro(lambda x: x > 0), 
+        
+        # 2. MAPEAR/TRANSFORMAR: Elevar al cuadrado
+        crear_transformador(lambda x: x ** 2), 
+        
+        # 3. REDUCIR: Sumar todos los elementos, comenzando en 0
+        crear_reductor(lambda acc, x: acc + x, 0)
+    )
+
+    resultado = pipeline(numeros)
+
+    # Verificación de la operacion:
+    # 1. Positivos: [1, 3, 5, 7, 8, 10]
+    # 2. Al cuadrado: [1, 9, 25, 49, 64, 100]
+    # 3. Suma: 1 + 9 + 25 + 49 + 64 + 100 = 248
+
+    print(f"Resultado: {resultado}")
+
+    # Se confirma que el resultado es 248
+
